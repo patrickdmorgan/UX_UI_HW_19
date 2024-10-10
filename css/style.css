@@ -1,0 +1,188 @@
+html, body {  
+    height: 100%; /* Full height for body */  
+    box-sizing: border-box;
+}  
+
+.navigation {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 10px 20px;  
+    background-color: #000000; 
+}  
+
+.inline-block {  
+    display: inline-block;  
+    vertical-align: top; /* Align items at the top */  
+}  
+
+.logo {  
+    width: 32%;
+    height: 30%;  
+    padding: 1%;  
+    text-align: left 10px; /* Center the logo */  
+}  
+
+.logo-img {  
+    max-width: 50%; /* Ensure logo is responsive */  
+    height: auto;  
+}  
+
+nav {  
+    width: 100%;  
+    padding: 3%;  
+}  
+  
+nav ul {  
+    width: 50%;  
+    margin-left: auto; /* Center the ul */  
+    padding: 0;  
+}  
+
+nav ul li {  
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    text-align: center;
+    padding: 0 30px; /* Space between items */  
+    color: white; /* Text color for navbar items */  
+}  
+
+nav ul li:hover {
+    transition-duration: 0.4s;
+    border: 1px solid #80bbff;
+    border-width: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: auto;
+
+  }
+
+.heroImg {  
+    height: auto;
+    width: auto;
+    padding: 25px;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+}  
+
+.content {  
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;  
+    text-align: center; /* Center content text */  
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Semi-transparent background for content */  
+    padding: 20px;  
+    border-radius: 10px; /* Rounded corners */  
+}  
+
+.profile-img {  
+    max-width: 40%;  
+    height: auto;  
+    border-radius: 50%; /* Make the profile image circular */  
+}  
+
+button {  
+    background-color: #80bbff; /* Button color */  
+    color: white; /* Button text color */  
+    border: none;  
+    padding: 10px 20px;  
+    font-size: 16px;  
+    cursor: pointer; /* Pointer cursor on hover */  
+    border-radius: 5px; /* Rounded corners for button */  
+}  
+
+button:hover {  
+    background-color: #1c4ff7;
+    transition-duration: 0.2s;  
+}  
+h1 {  
+    text-align: center;
+    margin-bottom: 20px; /* Space below headings */  
+}  
+
+h4 {  
+    margin: 10px 0; /* Space above/below project titles */  
+}  
+
+.skillsGrid {  
+    text-align: center;
+    display: grid; /* Grid layout */  
+    grid-template-columns: auto auto auto;
+    gap: 20px; /* Space between grid items */  
+    margin-top: 20px; /* Space above grid */
+    margin-left: 23%;
+    margin-right: 23%;
+    margin-bottom: 30px;
+    padding: 10px
+}
+
+.skillsItem {  
+    background-color: white; /* Project item background */  
+    border-radius: 8px; /* Rounded corners */  
+    padding: 15px; /* Inner padding */  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */  
+}  
+
+.skillsItem img {  
+    max-width: 100%; /* Responsive images */  
+    border-radius: 8px; /* Rounded corners for images */  
+}  
+
+.workGrid { 
+
+    text-align: center;
+    text-align: top;
+    display: grid; /* Grid layout */  
+    grid-template-rows: ;
+    gap: 20px; /* Space between grid items */  
+    margin-top: 20px; /* Space above grid */
+    margin-left: 23%;
+    margin-right: 23%;
+    margin-bottom: 30px;
+    padding: 10px
+}  
+
+.workItem {  
+    background-color: white; /* Project item background */  
+    border-radius: 8px; /* Rounded corners */  
+    padding: 15px; /* Inner padding */  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */  
+}  
+
+.workItem img {  
+    max-width: 100%; /* Responsive images */  
+    border-radius: 8px; /* Rounded corners for images */
+    margin-left: 10px;  
+}  
+
+footer {  
+    background-color: #000000; /* Dark footer background */  
+    color: white; /* Footer text color */  
+    text-align: center; /* Center text */  
+    padding: 10px 0; /* Padding */  
+}  
+
+footer ul {  
+    display: flex; /* Horizontal items */  
+    justify-content: center; /* Center items */  
+    list-style: none; /* No bullets */  
+}  
+
+footer ul li {  
+    margin: 0 15px; /* Space between footer items */  
+}  
+
+footer ul li a {  
+    color: white; /* Link color */  
+    text-decoration: none; /* Remove underline */  
+}  
+
+footer ul li a:hover {  
+    text-decoration: underline; /* Underline on hover */  
+}  
+
+@media screen and (max-width: 600px) {
+    div.example {
+      display: none;
+    }
+  }
