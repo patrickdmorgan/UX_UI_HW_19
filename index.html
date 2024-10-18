@@ -2,94 +2,118 @@
 <html lang="en">  
 <head>  
     <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>About Me</title>  
-    <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS -->  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="styles.css">  
 </head>  
 <body>  
-    <header class="navigation">  
-        <div class="inline-block logo">  
+    <!-- Your content goes here -->  
+</body>  
+</html>   
+    <title>My Portfolio</title>   
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS -->  
+</head>  
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<nav class="inline-block"> 
+    <div class="logo">
+        <class id="logo-img">
             <img src="images/logo.png" alt="Logo" class="logo-img">   
-        </div>  
-        <nav class="inline-block">  
+        </class>
+    </div>
+        <class id="#navButton">  
             <ul>  
-                <li class="inline-block">about</li>  
-                <li class="inline-block">skills</li>  
-                <li class="inline-block">work</li>  
-                <li class="inline-block">contact</li>  
+                <li><a href="#aboutMe">About Me</a></li>  
+                <li><a href="#mySkills">Skills</a></li>  
+                <li><a href="#myWork">Work</a></li>  
+                <li><a href="#contact">Contact</a></li>  
             </ul>  
-        </nav>  
-    </header>  
-    
-    <section class="heroImg">  
-        <div class="content">  
-            <img src="images/selfie 2024 1.png" alt="Profile Picture" class="profile-img"> 
-            <p>Hello. I'm Patrick, a junior designer who's passionate about making beautiful UI's</p>  
-            <button>Download Resume</button>  
-        </div>  
-    </section>  
+</nav>
+    <style>
+        body {
+          background-image: url('images/backgroundimage.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+        }
+    </style> 
+
+    <!--  About Me section coded using CSS flex -->
+    <section id="aboutMe"> <!-- jQuery "section id"  -->
+        <div class="aboutMe">   
+            <section class="heroImg">  
+                <div class="content">  
+                    <img src="images/MyImage.png" alt="Profile Picture" class="profile-img"> 
+                    <div>
+                        <p>Hello, <span id="imPatrick">I'm Patrick.</span></p>
+                            <p>A junior designer who's passionate about making</p><br>
+                            <p><span id="beautifulUI">beautiful UI's</div></p><br><br>
+                            <div id="resumeButton">View Resume</div>
+                    </div>
+                </div>  
+            </section>
+        </div> 
+    </section> 
 
 <!--  My UX Skills section coded using CSS flex -->
-    <section id="mySkills">  
-        <h1>My UX Skills</h1> 
-        <div class="skillsGrid">  
-            <div class="skillsItem">  
-                <img src="images/Screenshot 2024-10-09 at 10.10.59 PM.png" alt="Skill 1">  
-                <h4>User Research</h4>  
-                <p>Short description of yours skill.</p>  
-            </div>  
-            <div class="skillsItem">  
-                <img src="images/Screenshot 2024-10-09 at 10.10.59 PM.png" alt="Skill 2">  
-                <h4>User Interface Design</h4>  
-                <p>Short description of yours skill.</p>  
-            </div> 
-            <div class="skillsItem">  
-                <img src="images/Screenshot 2024-10-09 at 10.10.59 PM.png" alt="Skill 3">  
-                <h4>Web Developement</h4>  
-                <p>Short description of yours skill.</p>  
-            </div>   
-        </div>  
-    </section>   
-       
-    </section>  
-
-    <section id="myWork">  
-        <h1>My Work</h1>  
-        <!-- Include your work samples or a grid of projects -->  
-        <div class="workGrid">  
-            <div class="workItem">  
-                <div>
-                    <img src="images/Screenshot 2024-10-09 at 10.10.59 PM.png" alt="Project 1">  
-                </div>
-                <div>
-                    <h4>Project 1 Title</h4>  
-                    <p>Short description of the project.</p> 
-                    <button>Project 1</button>  
-                </div>
-            </div>  
-            <div class="workItem">  
-                <div>
-                    <img src="images/Screenshot 2024-10-09 at 10.10.59 PM.png" alt="Project 2">  
-                </div>
-                <div>
-                    <h4>Project 2 Title</h4>  
-                    <p>Short description of the project.</p>  
-                    <button>Project 2</button>  
-                </div>
-            </div>  
-            <div class="workItem">  
-                <div>
-                    <img src="images/Screenshot 2024-10-09 at 10.10.59 PM.png" alt="Project 3"> 
+        <section id="mySkills">  
+            <h1>My UX Skills</h1> 
+            <div class="skillsGrid">  
+                <div class="skillsItem">  
+                    <img src="images/Screenshot 2024-10-09 at 10.10.59 PM.png" alt="Skill 1">  
+                    <h4>User Research</h4>  
+                    <p>Short description of yours skill.</p>  
+                </div>  
+                <div class="skillsItem">  
+                    <img src="images/Screenshot 2024-10-09 at 10.10.59 PM.png" alt="Skill 2">  
+                    <h4>User Interface Design</h4>  
+                    <p>Short description of yours skill.</p>  
                 </div> 
-                <div>
-                    <h4>Project 3 Title</h4>  
-                    <p>Short description of the project.</p>  
-                    <button>Project 3</button>  
-                </div>
+                <div class="skillsItem">  
+                    <img src="images/Screenshot 2024-10-09 at 10.10.59 PM.png" alt="Skill 3">  
+                    <h4>Web Developement</h4>  
+                    <p>Short description of yours skill.</p>  
+                </div>   
             </div>  
-        </div>  
-    </section>  
+        </section>   
 
+        <section id="myWork">  
+            <h1>My Work</h1>  
+            <!-- Include your work samples or a grid of projects -->  
+            <div class="workGrid">  
+                <div class="workItem">  
+                    <div>
+                        <img src="images/Screenshot 2024-10-09 at 10.10.59 PM.png" alt="Project 1">  
+                    </div>
+                    <div>
+                        <h4>Project 1 Title</h4>  
+                        <p>Short description of the project.</p> 
+                        <button>Project 1</button>  
+                    </div>
+                </div>  
+                <div class="workItem">  
+                    <div>
+                        <img src="images/Screenshot 2024-10-09 at 10.10.59 PM.png" alt="Project 2">  
+                    </div>
+                    <div>
+                        <h4>Project 2 Title</h4>  
+                        <p>Short description of the project.</p>  
+                        <button>Project 2</button>  
+                    </div>
+                </div>  
+                <div class="workItem">  
+                    <div>
+                        <img src="images/Screenshot 2024-10-09 at 10.10.59 PM.png" alt="Project 3"> 
+                    </div> 
+                    <div>
+                        <h4>Project 3 Title</h4>  
+                        <p>Short description of the project.</p>  
+                        <button>Project 3</button>  
+                    </div>
+                </div>  
+            </div>  
+        </section>
     <footer>  
         <ul>  
             <li class="inline-block">Copyright 2024</li>  
@@ -100,4 +124,3 @@
     </footer>  
 </body>  
 </html>  
-

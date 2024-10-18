@@ -1,86 +1,149 @@
-html, body {  
-    height: 100%; /* Full height for body */  
-    box-sizing: border-box;
+/* Apply a background image to the body */  
+body {  
+    height: 100%; /* Full height */
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; /* Use Poppins font with fallback to sans-serif */  
+    margin: 0;
+    padding: 0;
 }  
 
-.navigation {  
-    display: flex;  
-    justify-content: space-between;  
-    align-items: center;  
-    padding: 10px 20px;  
-    background-color: #000000; 
-}  
-
-.inline-block {  
-    display: inline-block;  
-    vertical-align: top; /* Align items at the top */  
+h1, h2, h3, h4, h5, h6 {  
+    font-family: 'Poppins', sans-serif; /* Optional application to headings */  
+} 
+ 
+p {  
+    font-family: 'Poppins', sans-serif; /* Optional application to paragraphs */  
 }  
 
 .logo {  
-    width: 32%;
-    height: 30%;  
-    padding: 1%;  
-    text-align: left 10px; /* Center the logo */  
+    top: 0;
+    padding-right: 0;
+    width: 70%;
+    height: 30%;   
 }  
 
-.logo-img {  
-    max-width: 50%; /* Ensure logo is responsive */  
-    height: auto;  
+/* Navbar styles */  
+nav {   
+    display: flex;   
+    padding: 25px 0; /* Padding for navbar */  
+    position: sticky; /* Make the navbar sticky */  
+    top: 0; /* Stick to the top of the viewport */  
+    z-index: 1000; /* Ensure it stays above other content */  
 }  
 
-nav {  
-    width: 100%;  
-    padding: 3%;  
-}  
-  
 nav ul {  
-    width: 50%;  
-    margin-left: auto; /* Center the ul */  
-    padding: 0;  
+    display: flex;
+    align-self: center;   
+    list-style: none; /* Remove bullet points */
+    border: 1px;
+    border-radius: 8px; /* Rounded corners */  
+    padding: 5px 10px; 
+    margin: 0; /* No margin */  
 }  
 
 nav ul li {  
-    font-family: Arial, Helvetica, sans-serif;
-    width: auto;
-    text-align: center;
-    padding: 0 30px; /* Space between items */  
-    color: white; /* Text color for navbar items */  
+    display: flex;
+    border: 1px;
+    border-radius: 8px; /* Rounded corners */  
+    padding: 5px 10px;   
+    margin: 0; /* No margin */  
 }  
 
-nav ul li:hover {
-    transition-duration: 0.4s;
-    border: 1px solid #80bbff;
-    border-width: auto;
-    border-radius: 8px;
-    cursor: pointer;
-    padding: auto;
+nav ul li a {  
+    display: flex;
+    color: white; /* Text color */  
+    background-color: #000000;
+    text-decoration: none; /* No underline */ 
+    border: 1px solid #000000; 
+    border-radius: 8px; /* Rounded corners */  
+    padding: 5px 10px;
+    margin: 0; /* No margin */   
+}  
 
-  }
+nav ul li a:hover {  
+    display: flex;
+    color: #3ffde7;   /* Text color */  
+    background-color: #000000;
+    text-decoration: none; /* No underline */ 
+    transition-duration: 0.4s;   
+    box-shadow:     
+        0 0 5px #1c4ff7,
+        0 0 15px #3ffde7,  
+        0 0 20px #3ffde7;  
+    border-radius: 8px; /* Rounded corners */  
+    padding: 5px 10px; /* Padding for hover effect */  
+    margin: 0; /* No margin */   
+    cursor: pointer; /* Change cursor to pointer */  
+}  
 
+/* Hero image setup */  
 .heroImg {  
-    height: auto;
-    width: auto;
+    height: auto;  
+    width: auto;  
     padding: 25px;  
     display: flex;  
     align-items: center;  
-    justify-content: center;  
-}  
+    justify-content: center; 
+}
 
+/* Content box styles */  
 .content {  
-    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
     width: 500px;  
-    text-align: center; /* Center content text */  
-    background-color: rgba(255, 255, 255, 0.8); /* Optional: Semi-transparent background for content */  
+    text-align: center; /* Center the text */  
+    background-color: #1c4ff7; /* For browsers that do not support gradients */
+    background-image: linear-gradient(180deg, #1c4ff7, #3ffde7);  
     padding: 20px;  
     border-radius: 10px; /* Rounded corners */  
 }  
 
-.profile-img {  
-    max-width: 40%;  
-    height: auto;  
-    border-radius: 50%; /* Make the profile image circular */  
+#beautifulUI {
+    font-family: "Sofia", sans-serif;
+    padding: 15px 30px;  
+    font-size: 30px;  
+    color: white; /* Base text color */  
+    text-align: center;  
+    text-shadow:   
+        0 0 5px #1c4ff7, /* Outer glow */  
+        0 0 10px #1c4ff7,  
+        0 0 15px #1c4ff7,
+        0 0 20px #00cc99, /* inner glow */  
+        0 0 30px #00cc99,   
+        0 0 40px #00cc99;   
+    transition: text-shadow 0.3s ease; /* Smooth transition for effects */  
+    background-color: black; /* button background */  
+    border: none;  
+    border-radius: 5px;    
+    position: relative;  
+    overflow: hidden; /* ensures the glowing effect doesn't overflow the button */  
+    transition: all 0.3s ease;  
 }  
 
+#resumeButton {  
+    background-color: #1c4ff7; /* Button color */  
+    color: white; /* Button text color */  
+    border: none;  
+    padding: 10px 20px;  
+    font-size: 16px;   
+    border-radius: 20px; /* Rounded corners for button */  
+}  
+
+#resumeButton:hover {  
+    background-color: #80bbff; /* Darker button color on hover */  
+    transition-duration: 0.2s; /* Transition effect */  
+    cursor: pointer; 
+}  
+
+/* Profile image */  
+.profile-img {  
+    max-width: 40%; /* Responsive profile image */  
+    height: auto;  
+    border-radius: 100%; /* Circular profile image */ 
+} 
+
+/* Button styles */  
 button {  
     background-color: #80bbff; /* Button color */  
     color: white; /* Button text color */  
@@ -92,69 +155,77 @@ button {
 }  
 
 button:hover {  
-    background-color: #1c4ff7;
-    transition-duration: 0.2s;  
+    background-color: #1c4ff7; /* Darker button color on hover */  
+    transition-duration: 0.2s; /* Transition effect */  
 }  
+
+#imPatrick {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Headings styles */  
 h1 {  
-    text-align: center;
+    text-align: center;  
     margin-bottom: 20px; /* Space below headings */  
+    color: aliceblue;
 }  
 
 h4 {  
-    margin: 10px 0; /* Space above/below project titles */  
+    margin: 2px 0; /* Space above/below project titles */  
 }  
 
+/* Skills grid */  
 .skillsGrid {  
-    text-align: center;
+    text-align: center;  
     display: grid; /* Grid layout */  
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto; /* 3 columns */  
     gap: 20px; /* Space between grid items */  
-    margin-top: 20px; /* Space above grid */
-    margin-left: 23%;
-    margin-right: 23%;
-    margin-bottom: 30px;
-    padding: 10px
-}
+    margin-top: 20px; /* Space above grid */  
+    margin-left: 23%;  
+    margin-right: 23%;  
+    margin-bottom: 30px;  
+    padding: 10px;  
+}  
 
+/* Skills items */  
 .skillsItem {  
-    background-color: white; /* Project item background */  
+    background-color: rgb(186, 230, 251); /* Background for project items */  
     border-radius: 8px; /* Rounded corners */  
     padding: 15px; /* Inner padding */  
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */  
 }  
 
 .skillsItem img {  
-    max-width: 100%; /* Responsive images */  
+    max-width: 100%; /* Responsive image */  
     border-radius: 8px; /* Rounded corners for images */  
 }  
 
-.workGrid { 
-
-    text-align: center;
-    text-align: top;
+/* Work grid */  
+.workGrid {  
+    text-align: center;  
     display: grid; /* Grid layout */  
-    grid-template-rows: ;
     gap: 20px; /* Space between grid items */  
-    margin-top: 20px; /* Space above grid */
-    margin-left: 23%;
-    margin-right: 23%;
-    margin-bottom: 30px;
-    padding: 10px
+    margin-top: 20px; /* Space above grid */  
+    margin-left: 23%;  
+    margin-right: 23%;  
+    margin-bottom: 30px;  
+    padding: 10px;  
 }  
 
+/* Work items */  
 .workItem {  
-    background-color: white; /* Project item background */  
+    background-color: rgb(186, 230, 251); /* Background for project items */  
     border-radius: 8px; /* Rounded corners */  
     padding: 15px; /* Inner padding */  
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */  
 }  
 
 .workItem img {  
     max-width: 100%; /* Responsive images */  
-    border-radius: 8px; /* Rounded corners for images */
-    margin-left: 10px;  
+    border-radius: 8px; /* Rounded corners for images */  
+    margin-left: 10px; /* Margin for images */  
 }  
 
+/* Footer styles */  
 footer {  
     background-color: #000000; /* Dark footer background */  
     color: white; /* Footer text color */  
@@ -163,9 +234,9 @@ footer {
 }  
 
 footer ul {  
-    display: flex; /* Horizontal items */  
+    display: flex; /* Horizontal layout for items */  
     justify-content: center; /* Center items */  
-    list-style: none; /* No bullets */  
+    list-style: none; /* No bullet points */  
 }  
 
 footer ul li {  
@@ -179,6 +250,25 @@ footer ul li a {
 
 footer ul li a:hover {  
     text-decoration: underline; /* Underline on hover */  
+}  
+
+/* Media query for small screens */  
+@media screen and (max-width: 600px) {  
+    div.example {  
+        display: none; /* Hide elements with class 'example' on small screens */  
+    }  
+    .skillsGrid,  
+    .workGrid {  
+        margin-left: 5%; /* Adjust margins for smaller screens */  
+        margin-right: 5%;  
+    }  
+}  
+
+body {  
+    background-image: url('images/background.png'); /* Replace with the path to your image */  
+    background-size: cover; /* Make the background image cover the entire viewport */  
+    background-position: center; /* Center the background image */  
+    background-repeat: no-repeat; /* Prevent the background from repeating */  
 }  
 
 @media screen and (max-width: 600px) {
