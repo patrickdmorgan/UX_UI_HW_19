@@ -6,31 +6,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <link rel="stylesheet" href="styles.css">  
-</head>  
-<body>  
-    <!-- Your content goes here -->  
-</body>  
-</html>   
     <title>My Portfolio</title>   
     <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS -->  
 </head>  
-<body>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<nav class="inline-block"> 
-    <div class="logo">
-        <class id="logo-img">
-            <img src="images/logo.png" alt="Logo" class="logo-img">   
-        </class>
-    </div>
-        <class id="#navButton">  
-            <ul>  
-                <li><a href="#aboutMe">About Me</a></li>  
-                <li><a href="#mySkills">Skills</a></li>  
-                <li><a href="#myWork">Work</a></li>  
-                <li><a href="#contact">Contact</a></li>  
-            </ul>  
-</nav>
+   <!-- Y our content goes here -->  
+<body>
     <style>
         body {
           background-image: url('images/backgroundimage.png');
@@ -39,8 +20,54 @@
         }
     </style> 
 
+    <div class="logo">
+        <class id="logo-img">
+            <img src="images/logo.png" alt="Logo" class="logo-img">   
+        </class>
+    </div>
+
+    <nav class="inline-block"> 
+        <class id="#navButton">  
+            <ul>  
+                <li><a href="#aboutMe">About Me</a></li>  
+                <li><a href="#mySkills">Skills</a></li>  
+                <li><a href="#myWork">Work</a></li>  
+                <li><a href="#contact">Contact</a></li>  
+            </ul>  
+    </nav>
+    
+        <!--  BANNER -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div class="banner" id="scroll-banner">PM DIGITAL DESIGNS</div>  
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+<script>  
+    $(document).ready(function() {  
+        function scrollBanner() {  
+            // Reset position of the banner to start off-screen  
+            $('#scroll-banner').css('left', $(window).width());  
+            
+            // Calculate the width of the banner  
+            const bannerWidth = $('#scroll-banner').width();  
+            
+            // Animate the banner to scroll from right to left  
+            $('#scroll-banner').animate({  
+                left: -bannerWidth // Move it off-screen to the left  
+            },   
+            {  
+                duration: 15000, // Duration of the scroll  
+                easing: 'linear',  
+                complete: scrollBanner // Repeat the animation  
+            });  
+        }  
+        
+        scrollBanner(); // Initially call the function  
+    });  
+</script>  
+
     <!--  About Me section coded using CSS flex -->
-    <section id="aboutMe"> <!-- jQuery "section id"  -->
+    <section>
+    <section id="aboutMe">   <!-- jQuery "section id"  -->
         <div class="aboutMe">   
             <section class="heroImg">  
                 <div class="content">  
