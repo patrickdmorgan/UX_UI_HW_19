@@ -102,10 +102,15 @@ nav ul li a:hover {
     width: 100%; 
     min-width:fit-content; 
     max-width: fit-content;
-    height: 150px; /* Height of the banner */  
-    background-color: none; /* Banner color */  
+    height: 200px; /* Height of the banner */  
+    font-weight: bold;  
+    background: linear-gradient(45deg, #ff6b6b, #f2b632, #6bf2c0);  
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+    background-clip: text;  
+    text-fill-color: transparent;  
     color: white;   
-    font-size: 100px;  
+    font-size: 150px;  
     white-space: nowrap; /* Prevent text wrapping */  
     overflow: hidden; /* Hide overflow */  
     
@@ -116,8 +121,8 @@ nav ul li a:hover {
     justify-content: center;   /* Center horizontally */  
     align-items: center;       /* Center vertically */  
     height: 100vh;            /* Full viewport height */ 
-    margin-left: 33%;
-    margin-right: 33%;
+    margin: 0 auto;
+    width: 100%;
 }  
 /* Hero image setup */  
 .heroImg {  
@@ -131,13 +136,13 @@ nav ul li a:hover {
 .content {  
     color: #000000;  
     font-family: "Poppins", sans-serif;  
-    font-size: 16px;  
-    width: 500px;  
+    font-size: 16px;    
     text-align: center; /* Center the text */  
     background-color: #1c4ff7; /* Solid background color */  
     background-image: linear-gradient(180deg, #1c4ff7, #3ffde7);  
     padding: 20px;  
     border-radius: 10px; /* Rounded corners */  
+    margin: auto;
 }  
 
 /* Other styles remain unchanged */  
@@ -218,23 +223,31 @@ h4 {
 }  
 
 /* Skills grid */  
+
+
 .skillsGrid {  
     text-align: center;  
     display: grid; /* Grid layout */  
-    grid-template-columns: auto auto auto; /* 3 columns */  
+    grid-template-columns: auto auto auto; /* 3 columns */ 
+    display: grid;  
+    place-items: center; /* Center both horizontally and vertically */  
     gap: 20px; /* Space between grid items */  
-    margin-top: 20px; /* Space above grid */  
+    margin-top: 5px; /* Space above grid */  
+    margin-bottom: 30px;
     margin-left: 23%;  
     margin-right: 23%;  
-    margin-bottom: 30px;  
-    padding: 10px;  
 }  
+
+.content {  
+    text-align: center; /* Optional: center text inside content */  
+   }   
 
 /* Skills items */  
 .skillsItem {  
     background-color: rgb(186, 230, 251); /* Background for project items */  
     border-radius: 8px; /* Rounded corners */  
     padding: 15px; /* Inner padding */  
+    max-width: 80%;
 }  
 
 .skillsItem img {  
@@ -247,7 +260,7 @@ h4 {
     text-align: center;  
     display: grid; /* Grid layout */  
     gap: 20px; /* Space between grid items */  
-    margin-top: 20px; /* Space above grid */  
+    margin-top: 5px; /* Space above grid */  
     margin-left: 23%;  
     margin-right: 23%;  
     margin-bottom: 30px;  
@@ -262,9 +275,12 @@ h4 {
 }  
 
 .workItem img {  
-    max-width: 100%; /* Responsive images */  
+    max-width: 50%; /* Responsive images */  
+    min-width: 50%;
     border-radius: 8px; /* Rounded corners for images */  
-    margin-left: 10px; /* Margin for images */  
+    margin-left: 10px; /* Margin for images */
+    border-color: #000000;
+    border-width: 6px;  
 }  
 
 /* Footer styles */  
