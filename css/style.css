@@ -252,7 +252,9 @@ h4 {
 
 .skillsItem img {  
     max-width: 100%; /* Responsive image */  
-    border-radius: 8px; /* Rounded corners for images */  
+    border-radius: 8px; /* Rounded corners for images */ 
+    height: auto;
+    width: auto; 
 }  
 
 /* Work grid */  
